@@ -1,9 +1,17 @@
-<script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
   <main>
-    <TheWelcome />
+    <Shortener />
   </main>
 </template>
+
+<script lang="ts">
+import Shortener from "../components/Shortener.vue";
+
+import { defineComponent } from "vue";
+export default defineComponent({
+  setup() {},
+  components: {
+    Shortener,
+  },
+});
+</script>
